@@ -9774,3 +9774,137 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .icon-link {
+  font-size: 38px; /* Increase icon size */
+  color: #b1b493;      /* Default color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 15px; /* Add padding to the left */
+}
+
+.icon-link:hover {
+  color: #333;   /* Change color on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+.colorlib-experience {
+  padding-top: 4em;
+  padding-bottom: 9em;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
+.colorlib-heading {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.heading-meta {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.timeline-centered {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-centered:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  background: #f2f3f7;
+  top: 20px;
+  bottom: 20px;
+  margin-left: 29px;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.timeline-entry-inner {
+  position: relative;
+  margin-left: -20px;
+}
+
+.timeline-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #2c98f0;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px #f2f3f7;
+  line-height: 40px;
+  float: left;
+}
+
+.timeline-icon i {
+  color: #fff;
+}
+
+.timeline-icon.color-2 { background: #ec5453; }
+.timeline-icon.color-3 { background: #f9bf3f; }
+.timeline-icon.color-4 { background: #a84cb8; }
+.timeline-icon.color-5 { background: #2fa499; }
+.timeline-icon.color-none {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.timeline-label {
+  position: relative;
+  background: #f2f3f7;
+  padding: 1.5em;
+  margin-left: 60px;
+}
+
+.timeline-label:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #f2f3f7 transparent transparent;
+  left: 0;
+  top: 10px;
+  margin-left: -9px;
+}
+
+.timeline-label h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.timeline-label h2 a {
+  color: #000;
+}
+
+.timeline-label h2 span {
+  opacity: 0.4;
+  font-size: 16px;
+}
+
+.timeline-label p + p {
+  margin-top: 15px;
+}
