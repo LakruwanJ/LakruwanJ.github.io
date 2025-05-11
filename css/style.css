@@ -9775,17 +9775,32 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    .icon-link {
+/* Default (desktop) styles */
+.icon-link {
   font-size: 38px; /* Increase icon size */
-  color: #b1b493;      /* Default color */
+  color: #333;      /* Default color */
   transition: color 0.3s ease, transform 0.3s ease;
-  padding-left: 15px; /* Add padding to the left */
+  padding-right: 15px; /* Add padding to the left */
 }
 
 .icon-link:hover {
-  color: #333;   /* Change color on hover */
+  color: #b1b493;   /* Change color on hover */
   transform: scale(1.2); /* Slight zoom effect */
 }
+
+@media (max-width: 991.98px) {
+  .icon-link {
+    color: #fff;
+    display: block;             /* Ensure it's a block element */
+    text-align: center;         /* Center if inside a block container */
+    margin: 0 auto;             /* Center horizontally */
+  }
+
+  .icon-link:hover {
+    color: #333;
+  }
+}
+
 
 .colorlib-experience {
   padding-top: 4em;
@@ -9908,3 +9923,12 @@ textarea.form-control {
 .timeline-label p + p {
   margin-top: 15px;
 }
+
+
+
+html, body {
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* enables momentum scroll on iOS */
+}
+
